@@ -3,25 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.home-text::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 5px;
+  background: #4285f4;
+  position: absolute;
+  left: 20%;
+  bottom: -5px;
+  border-radius: 20px;
 }
