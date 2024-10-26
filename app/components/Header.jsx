@@ -11,9 +11,7 @@ function Header() {
       <Image src={Logo} alt="Logo" width={200} height={80} />
       <ul className="flex items-center justify-center gap-10">
         <li>
-          <Link href="/" className="home-text">
-            Home
-          </Link>
+          <Link href="/">Home</Link>
         </li>
         <li>
           <Link href="/services">Services</Link>
@@ -43,7 +41,7 @@ function Header() {
           English
           <Image src={Chevron} alt="Chevron" width={20} height={20} />
         </div>
-        <button className="bg-blue-600 text-white rounded-3xl py-2 px-4">
+        <button className="bg-main_blue text-white rounded-3xl py-2 px-4">
           Contact
         </button>
       </div>
