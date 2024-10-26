@@ -5,6 +5,7 @@ import spiral_ from "./assets/icons/spiral_.png";
 import spiraly from "./assets/icons/spiraly.png";
 import spiraly_ from "./assets/icons/spiraly_.png";
 import Services from "./components/Services";
+import AboutUs from "./components/AboutUs";
 
 export default function Home() {
   return (
@@ -38,6 +39,7 @@ export default function Home() {
         </div>
       </div>
       <Services />
+      <AboutUs />
     </>
   );
 }
