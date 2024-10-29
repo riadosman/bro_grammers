@@ -6,6 +6,10 @@ import spiraly from "./assets/icons/spiraly.png";
 import spiraly_ from "./assets/icons/spiraly_.png";
 import Services from "./components/Services";
 import AboutUs from "./components/AboutUs";
+import Projects from "./components/Projects";
+import Blogs from "./components/Blogs";
+import Pricing from "./components/Pricing";
+import ContactUs from "./components/ContactUs";
 
 export default function Home() {
   return (
@@ -40,6 +44,10 @@ export default function Home() {
       </div>
       <Services />
       <AboutUs />
+      <Projects />
+      <Blogs />
+      <Pricing />
+      <ContactUs />
     </>
   );
 }

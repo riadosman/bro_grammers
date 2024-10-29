@@ -7,7 +7,6 @@ import { MdArrowOutward } from "react-icons/md";
 function AboutUs() {
   return (
     <>
-      {" "}
       <div className="flex items-center justify-around">
         <Image src={About} alt="about-us" width={487} height={414} />
         <div className="w-[561px]">
