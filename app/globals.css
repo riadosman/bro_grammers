@@ -40,7 +40,7 @@ body {
   width: 100%;
   height: 100px;
   position: absolute;
-  top: 40px;
+  top: 10px;
 }
 .project_bg {
   background: url("./assets/icons/projects_shape.png") no-repeat;
@@ -49,7 +49,7 @@ body {
   width: 100%;
   height: 100px;
   position: absolute;
-  top: 40px;
+  top: 10px;
 }
 .card {
   background: url("./assets/project_bg.png") no-repeat;
@@ -62,7 +62,7 @@ body {
   width: 100%;
   height: 100px;
   position: absolute;
-  top: 40px;
+  top: 10px;
 }
 .custom-shadow {
   box-shadow: 0px 5px 40px 0px #d7d7d780;
@@ -74,7 +74,7 @@ body {
   width: 100%;
   height: 100px;
   position: absolute;
-  top: 40px;
+  top: 10px;
 }
 .shadow {
   box-shadow: 0px 4px 40px 0px #d7d7d7b2;

@@ -13,6 +13,7 @@ function Pricing() {
         icon="pricing_bg"
       />
       <div className="container flex items-center justify-between gap-9">
+        {/* i Can make it component but in the real website it will be change content */}
         <div className="h-[650px] rounded-3xl border-[1px] border-[#D4D2E3] p-8 flex flex-col gap-4">
           <p className="text-2xl font-semibold">Basic</p>
           <p className="text-gray_text">

@@ -1,4 +1,5 @@
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import Link from "next/link";
 
 function ProjectCard() {
   return (
@@ -9,9 +10,12 @@ function ProjectCard() {
         Project Description About Project Description Project Description About
         Project Project Description .
       </p>
-      <button className="flex items-center bg-light_text text-white rounded-lg text-base p-1 self-end">
+      <Link
+        href="/projects/detail"
+        className="flex items-center bg-light_text text-white rounded-lg text-base p-[10px] self-end"
+      >
         View More <MdKeyboardDoubleArrowRight />
-      </button>
+      </Link>
     </div>
   );
 }
