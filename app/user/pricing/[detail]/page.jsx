@@ -1,10 +1,28 @@
+"use client";
 import Hero from "./../../components/Hero";
 import Image from "next/image";
 import Shape from "../../assets/icons/pricing.png";
 import Green_Tick from "../../assets/icons/greenTick.png";
 import { FiChevronUp } from "react-icons/fi";
+import { useState } from "react";
 
 function PricingDetail() {
+  const [features, setFeatures] = useState([
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+  ]);
+  const toggleFeature = (index) => {
+    setFeatures((prevFeatures) => {
+      const updatedFeatures = [...prevFeatures];
+      updatedFeatures[index] = !updatedFeatures[index];
+      return updatedFeatures;
+    });
+  };
   return (
     <div>
       <Hero
@@ -76,26 +94,45 @@ function PricingDetail() {
         <div>
           <p className="text-3xl font-medium my-20">Features :</p>
           <div>
-            <div className="flex items-center justify-between cursor-pointer">
-              <p className="flex items-center gap-3 font-semibold text-2xl">
-                <Image
-                  src={Green_Tick}
-                  alt="Green tick"
-                  width={26}
-                  height={26}
-                />
-                All analytics features
-              </p>
-              <p className="w-[18px] h-[9px] text-gray_text">
-                <FiChevronUp />
-              </p>
-            </div>
-            <p className="text-gray_text leading-10 text-xl py-4">
-              Lorem ipsum dolor sit amet dolor siti conse ctetur adipiscing elit
-              adipiscing elit . Lorem ipsit amet dolor siti conse ctetur
-              adipiscing elit adipiscing elit . Lorem ipsum dolor sit amconse
-              ctetur adipiscing elit adipiscing elit .
-            </p>
+            {[
+              "All analytics features",
+              "All analytics features",
+              "All analytics features",
+              "All analytics features",
+              "All analytics features",
+              "All analytics features",
+              "All analytics features",
+            ].map((featureTitle, index) => (
+              <div key={index} className="mb-4">
+                {/* Feature Header */}
+                <div
+                  className="flex items-center justify-between cursor-pointer py-2"
+                  onClick={() => toggleFeature(index)}
+                >
+                  <p className="flex items-center gap-3 font-semibold text-2xl">
+                    <Image
+                      src={Green_Tick}
+                      alt="Green tick"
+                      width={26}
+                      height={26}
+                    />
+                    {featureTitle}
+                  </p>
+                  <p className="w-[18px] h-[9px] text-gray_text">
+                    {features[index] ? <FiChevronUp /> : <FiChevronUp />}
+                  </p>
+                </div>
+
+                {/* Feature Description, shown only if the feature is open */}
+                {features[index] && (
+                  <p className="text-gray_text leading-10 text-xl py-4">
+                    Lorem ipsum dolor sit amet dolor siti conse ctetur
+                    adipiscing elit. This feature includes comprehensive support
+                    for advanced analytics and detailed insights.
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>
