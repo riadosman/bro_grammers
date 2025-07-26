@@ -1,6 +1,4 @@
-# Anime Vault
-
-This project is Anime Vault for Browseing Anime and fetch it from API
+# Bro Grammers
 
 ![App Screenshot](screenshots/main-screenshot.png)
 
