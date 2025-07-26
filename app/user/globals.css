@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.hero {
+  position: absolute;
+  background: url("./assets/icons/hero_shapes.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  top: 100px;
+}
+.kits {
+  position: absolute;
+  background: url("./assets/icons/kits.png") no-repeat;
+  background-size: contain;
+  top: 220px;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+@media (max-width: 768px) {
+  .kits {
+    display: none;
+  }
+}
+.service_bg {
+  background: url("./assets/icons/service_icon.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+}
+.project_bg {
+  background: url("./assets/icons/projects_shape.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+}
+.card {
+  background: url("./assets/project_bg.png") no-repeat;
+  background-size: cover;
+}
+.blogs_bg {
+  background: url("./assets/icons/Blogs.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+}
+.custom-shadow {
+  box-shadow: 0px 5px 40px 0px #d7d7d780;
+}
+.pricing_bg {
+  background: url("./assets/icons/pricing.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+}
+.shadow {
+  box-shadow: 0px 4px 40px 0px #d7d7d7b2;
+}
